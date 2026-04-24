@@ -59,6 +59,8 @@ class Marker implements Runnable {
             }
 
             state.shouldContinue = false;
+            state.blocked = false;
+            g.blockedCount--;
             g.lock.unlock();
         }
     }
