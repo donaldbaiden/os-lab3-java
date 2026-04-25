@@ -87,5 +87,12 @@ public class Main {
         for (int i = 0; i < k; i++) {
             threads[i].join();
         }
+
+        System.out.println("Все потоки marker завершены.");
+        System.out.print("Итоговый массив: ");
+        for (int i = 0; i < g.size; i++) {
+            System.out.print(g.arr[i] + " ");
+        }
+        System.out.println();
     }
 }
